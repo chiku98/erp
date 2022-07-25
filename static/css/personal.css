@@ -1,0 +1,184 @@
+:root {
+	--primary-color: #4834d4;
+	--success-color: #6ab04c;
+	--warning-color: #f0932b;
+	--danger-color: #eb4d4b;
+
+	--light-color: #212529;
+	--light-second-color: #727475;
+	--light-background: #ffffff;
+	--light-second-background: #f1f1f1;
+
+	--dark-color: #909090;
+	--dark-second-color: #f5f6fa;
+	--dark-background: #23242D;
+	--dark-second-background: #181818;
+  --color: #000;
+  --icon-color: #00f;
+  --bg: #fff;
+  --tab: #000;
+  --box-text: #444;
+}
+
+.light {
+	--main-bg-color: var(--light-background);
+	--second-bg-color: var(--light-second-background);
+	--main-color: var(--light-color);
+	--second-color: var(--light-second-color);
+}
+
+.dark {
+	--main-bg-color: var(--dark-background);
+	--second-bg-color: var(--dark-second-background);
+	--main-color: var(--dark-color);
+	--second-color: var(--dark-second-color);
+  --color: #fff;
+  --icon-color: #fff;
+  --bg: #000;
+  --tab: #00f;
+  --box-text: #fff;
+}
+
+
+.prof {
+    width: 60%;
+    margin: 50px auto;
+    background-color: var(--bg);
+}
+
+.proimg {
+    text-align: center;
+    height: 250px;
+    padding: 30px;
+}
+
+#babuimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#btnimg {
+    width: 100px;
+    font-size: 10px;
+    border: none;
+    height: 20px;
+}
+
+.tabb {
+    background-color: var(--tab);
+    text-align: center;
+}
+
+.tabb button {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--tab);
+}
+
+.tabb button:hover {
+    background-color: rgba(255, 255, 255, 0.203);
+}
+
+.tabb button.active {
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+#Tokyo>div{
+    height: 340px;
+}
+
+.pi {
+    font-size: 12px;
+    color: var(--box-text);
+    margin: 20px;
+}
+
+.pi input {
+    width: 100%;
+    color: var(--color);
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid var(--box-text);
+}
+
+.pi input:focus {
+    outline: none;
+}
+
+.savebtn input {
+    border: none;
+    background-color: var(--color);
+    color: var(--bg);
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 #000000;
+}
+
+.savebtn {
+    padding: 20px;
+    border-top: 1px dashed var(--box-text);
+    text-align: right;
+}
+
+
+
+
+
+
+/*  RESPONSIVE  */
+
+@media (min-width: 300px) and (max-width: 430px) {
+    .prof{
+        width: 100%;
+    }
+    .tabb button{
+        padding: 5px 5px;
+        margin: 5px 5px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 290px) {
+    .prof{
+        width: 100%;
+    }
+    .tabb button{
+        padding: 0px 0px;
+        margin: 5px 0px;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1380px) {
+    
+}
+
+@media (min-width: 750px) and (max-width: 920px) {
+    .prof{
+        width: 90%;
+    }
+    .tabb button{
+        padding: 5px 10px;
+        margin: 10px 10px;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 690px) {
+    .prof{
+        width: 90%;
+    }
+    .tabb button{
+        padding: 5px 10px;
+        margin: 10px 10px;
+    }
+}

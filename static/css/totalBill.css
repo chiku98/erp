@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #4834d4;
+    --success-color: #6ab04c;
+    --warning-color: #f0932b;
+    --danger-color: #eb4d4b;
+
+    --light-color: #212529;
+    --light-second-color: #727475;
+    --light-background: #ffffff;
+    --light-second-background: #f1f1f1;
+
+    --dark-color: #909090;
+    --dark-second-color: #f5f6fa;
+    --dark-background: #23242D;
+    --dark-second-background: #181818;
+    --color: #000;
+    --icon-color: #00f;
+    --light: #fff;
+    --box-text: #444;
+}
+
+.light {
+    --main-bg-color: var(--light-background);
+    --second-bg-color: var(--light-second-background);
+    --main-color: var(--light-color);
+    --second-color: var(--light-second-color);
+}
+
+.dark {
+    --main-bg-color: var(--dark-background);
+    --second-bg-color: var(--dark-second-background);
+    --main-color: var(--dark-color);
+    --second-color: var(--dark-second-color);
+    --color: #fff;
+    --icon-color: #fff;
+    --light: #000;
+    --box-text: #fff;
+}
+
+
+
+
+.billbtn {
+    padding: 20px;
+}
+
+.log {
+    margin-top: -20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.sch {
+    margin-bottom: 30px;
+}
+
+.nav {
+    margin-right: 20px;
+    margin-top: -55px;
+    float: right;
+}
+
+.nav > a {
+    text-decoration: none;
+    color: var(--color);
+    border: 1px solid #888;
+    padding: 3px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+}
+
+form.example {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+form.example input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    background: #f1f1f1;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+form.example button {
+    float: left;
+    padding: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.product-tile-footer {
+    background-color: #fff;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+    display: grid;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+
+.product-tile-footer > div {
+    grid-row: 1/span1;
+}
+
+.btnAddAction {
+    float: right;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+.product-quantity {
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+/*RESPONSIVE*/
+
+
+@media (min-width: 300px) and (max-width: 430px) {
+    form.example input[type=text] {
+        width: 160px;
+    }
+
+    .product-tile-footer {
+        width: 95%;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 290px) {
+    form.example input[type=text] {
+        width: 90px;
+    }
+
+    .product-tile-footer {
+        width: 95%;
+        font-size: 13px;
+    }
+}

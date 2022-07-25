@@ -1,0 +1,565 @@
+.profilearea {
+    /* width: ; */
+    margin-left: 40%;
+    height: 300px;
+    padding: 50px;
+    position: absolute;
+    top: 100px;
+}
+
+.profileimage {
+    /* margin-left: 43%; */
+}
+
+.slide {
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+
+.slide > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    animation: slide 12s infinite;
+    opacity: 0;
+}
+
+.slide > img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slide > img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+
+@keyframes slide {
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0.1;
+    }
+
+    40% {
+        transform: scale(1.1);
+    }
+}
+
+
+.pro {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px 0 #000000;
+}
+
+/* 
+.profileimage>input {
+    position: absolute;
+    outline: none;
+    width: 100px;
+    margin-left: -125px;
+    margin-top: 125px;
+    opacity: 0;
+}
+
+.profileimage>button {
+    position: absolute;
+    width: 100px;
+    margin-left: -125px;
+    margin-top: 125px;
+    border: none;
+    background-color: rgba(94, 94, 94, 0.4);
+    color: #e6e5e5;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+} */
+
+.edit > i {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -20px;
+    color: #fff;
+}
+
+.profiletitle {
+    width: 200px;
+    /* text-align: center; */
+    /* margin-left: 41%; */
+}
+
+.compttl {
+    color: #fff;
+    font-size: 20px;
+}
+
+.compdesc {
+    color: #e6e5e5;
+}
+
+.tabarea {
+    width: 860px;
+    margin: 20px auto;
+}
+
+.tab {
+    overflow: hidden;
+    border-radius: 40px;
+    background-color: rgb(164, 229, 255);
+
+}
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    margin: 10px 51px;
+}
+
+.tab > button:first-child {
+    color: #008000;
+}
+
+.tab > button:nth-child(2) {
+    color: #0000cd;
+}
+
+.tab > button:last-child {
+    color: #ff7700;
+}
+
+.tab button:hover {
+    background-color: rgba(0, 0, 0, 0.203);
+}
+
+.tab > button i {
+    color: blue;
+}
+
+.tab button.active {
+    background-color: #fff;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+
+    border-top: none;
+}
+
+.indc {
+    margin-top: 30px;
+}
+
+.indc > div {
+    float: left;
+    margin-left: 30px;
+}
+
+#rnd {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(226, 254, 238);
+    border-radius: 50%;
+    border: 1px solid darkgreen;
+    text-align: center;
+    padding: 50px 10px 0 10px;
+}
+
+#rnd > p {
+    font-size: 13px;
+}
+
+#rnd > button {
+    border: none;
+    background-color: rgb(0, 133, 86);
+    color: #fff;
+    height: 25px;
+    width: 100px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#rnd:hover {
+    box-shadow: 0 4px 8px 0 #000000;
+}
+
+#tri {
+    font-size: 30px;
+    margin-top: 80px;
+    color: #888;
+}
+
+.headt {
+    background-color: rgb(255, 164, 164);
+    border-radius: 40px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #000088;
+}
+
+.headtt {
+    background-color: rgb(255, 164, 164);
+    border-radius: 40px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #000088;
+    margin-top: 400px;
+}
+
+.cdc {
+    float: left;
+}
+
+.cd {
+    width: 237px;
+    margin: 20px 20px;
+    box-shadow: 0 4px 8px 0 #000000;
+    border-radius: 20px;
+}
+
+.main {
+    height: 120px;
+    padding: 20px;
+    font-size: 18px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.main > i {
+    color: #ff7700;
+    font-size: 25px;
+}
+
+.des {
+    padding: 20px;
+    height: 30px;
+    background-color: rgb(75, 83, 116);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.des > p {
+    margin-top: -10px;
+}
+
+.des > i {
+    float: right;
+    margin-top: -30px;
+    color: #ff7700;
+}
+
+
+
+.hf {
+    background-color: rgb(80, 50, 1);
+    color: #fff;
+    height: 60px;
+    margin-top: 20px;
+    padding: 25px 10px;
+    box-shadow: 0 4px 8px 0 #000000;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.hf > i {
+    position: absolute;
+}
+
+.hf > span > input {
+    background-color: rgb(80, 50, 1);
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-left: 30px;
+}
+
+.hf > span > input:focus {
+    outline: none;
+
+}
+
+
+.bf {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 #000000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.th {
+    color: #ff7700;
+}
+
+.btnac {
+    width: 100px;
+    border: none;
+    box-shadow: 0 1px 2px 0 #000000;
+    border-radius: 5px;
+}
+
+td {
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+.card1 {
+    width: 30%;
+    height: 200px;
+    font-family: cursive;
+    border-radius: 10px 0;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    padding: 10px;
+    float: left;
+    margin-left: 35px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.card1:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card1 a {
+    text-decoration: none;
+}
+
+@media (min-width: 300px) and (max-width: 430px) {
+    .profilearea {
+        margin-left: 15%;
+    }
+
+    .tabarea {
+        width: auto;
+    }
+
+    .tab {
+        padding-left: 10px;
+    }
+
+    .tab button {
+        padding: 8px 8px;
+        font-size: 10px;
+        margin: 10px 0px;
+    }
+
+    .indc > div {
+        margin-top: 20px;
+        margin-left: 48px;
+    }
+
+    .headtt {
+        margin-top: 1220px;
+    }
+
+    .cdc {
+        margin-left: 20px;
+    }
+
+    .btnac {
+        width: 60px;
+    }
+
+    .card1 {
+        float: none;
+        width: 90%;
+        margin: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 290px) {
+    .profilearea {
+        margin-left: 10%;
+    }
+
+    .tabarea {
+        width: auto;
+    }
+
+    .tab {
+        padding-left: 10px;
+    }
+
+    .tab button {
+        padding: 8px 5px;
+        font-size: 8px;
+        margin: 10px 0px;
+    }
+
+    .indc > div {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .headtt {
+        margin-top: 1220px;
+    }
+
+    .cdc {
+        margin-left: -20px;
+    }
+
+    .bf {
+        padding: 10px;
+    }
+
+    .btnac {
+        width: 45px;
+    }
+
+    .card1 {
+        float: none;
+        width: 90%;
+        margin: 20px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1380px) {
+    .profilearea {
+        margin-left: 37%;
+    }
+
+    .card1 {
+        font-size: 15px;
+        width: 29%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 969px) {
+    .profilearea {
+        margin-left: 33%;
+    }
+
+    .card1 {
+        font-size: 13px;
+        width: 28%;
+    }
+
+    .tabarea {
+        width: auto;
+    }
+
+    .tab button {
+        padding: 10px 16px;
+        font-size: 14px;
+        margin: 10px 56px;
+    }
+
+    #rnd {
+        height: 180px;
+        width: 180px;
+        padding: 40px 10px 0 10px;
+    }
+
+    .cd {
+        width: 220px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+    .profilearea {
+        margin-left: 28%;
+    }
+
+    .card1 {
+        font-size: 12px;
+        width: 27.5%;
+    }
+
+    .tabarea {
+        width: auto;
+    }
+
+    .tab button {
+        padding: 10px 16px;
+        font-size: 12px;
+        margin: 10px 41px;
+    }
+
+    .indc > div {
+        margin-left: 50px;
+    }
+
+    .indc > div:nth-child(4) {
+        margin-left: 160px;
+    }
+
+    .headtt {
+        margin-top: 620px;
+    }
+
+    .cdc {
+        margin-left: 20px;
+    }
+
+    .btnac {
+        width: 80px;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 690px) {
+    .profilearea {
+        margin-left: 28%;
+    }
+
+    .card1 {
+        width: 92%;
+        margin: 20px;
+    }
+
+    .tabarea {
+        width: auto;
+    }
+
+    .tab button {
+        padding: 8px 10px;
+        font-size: 12px;
+        margin: 10px 22px;
+    }
+
+    .indc > div {
+        margin-left: 20px;
+    }
+
+    .indc > div:nth-child(4) {
+        margin-left: 100px;
+    }
+
+    .headtt {
+        margin-top: 620px;
+    }
+
+    .btnac {
+        width: 60px;
+    }
+
+    .cd {
+        width: 200px;
+    }
+}

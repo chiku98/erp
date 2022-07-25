@@ -1,0 +1,431 @@
+:root {
+	--primary-color: #4834d4;
+	--success-color: #6ab04c;
+	--warning-color: #f0932b;
+	--danger-color: #eb4d4b;
+
+	--light-color: #212529;
+	--light-second-color: #727475;
+	--light-background: #ffffff;
+	--light-second-background: #f1f1f1;
+
+	--dark-color: #909090;
+	--dark-second-color: #f5f6fa;
+	--dark-background: #23242D;
+	--dark-second-background: #181818;
+  --color: #000;
+  --icon-color: #00f;
+  --light: #fff;
+  --box-text: #444;
+}
+
+.light {
+	--main-bg-color: var(--light-background);
+	--second-bg-color: var(--light-second-background);
+	--main-color: var(--light-color);
+	--second-color: var(--light-second-color);
+}
+
+.dark {
+	--main-bg-color: var(--dark-background);
+	--second-bg-color: var(--dark-second-background);
+	--main-color: var(--dark-color);
+	--second-color: var(--dark-second-color);
+  --color: #fff;
+  --icon-color: #fff;
+  --light: #000;
+  --box-text:#fff;
+}
+
+
+.total {
+    background-color: var(--light);
+    padding: 20px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    height: 1050px;
+}
+
+.four {
+    width: 60%;
+    float: left;
+}
+
+.one {
+    width: 40%;
+    float: left;
+    border: 1px solid #888;
+    border-radius: 5px;
+    height: 420px;
+    overflow: hidden;
+    font-size: 12px;
+    color: var(--box-text);
+}
+
+.four > div {
+    width: 47%;
+    height: 200px;
+    float: left;
+    font-size: 12px;
+    border: 1px solid #888;
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+    color: var(--box-text);
+    overflow: hidden;
+}
+
+.four > div > p:first-child {
+    color: #000;
+    background-color: rgb(161, 255, 222);
+    padding: 7px;
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+.f41 {
+    overflow: auto;
+    height: 150px;
+}
+
+.f41 > div {
+    float: left;
+    margin: 10px;
+    width: 43%;
+}
+
+.f41 > .fc {
+    width: 90%;
+}
+
+input,
+select {
+    width: 100%;
+    color: var(--color);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    border-bottom: 1px solid #888;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(0, 247, 255);
+}
+
+.one > p:first-child {
+    color: #000;
+    background-color: rgb(161, 255, 222);
+    padding: 7px;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.o1 > div {
+    float: left;
+    margin: 10px;
+    width: 45%;
+}
+
+.o1 > div:first-child {
+    width: 95%;
+}
+
+.fullone {
+    border: 1px solid #888;
+    width: 100%;
+    margin-top: 440px;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.sch {
+    width: 250px;
+    margin: 20px;
+    float: right;
+}
+
+th,
+td {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.tr1 {
+    background-color: rgb(161, 255, 222);
+}
+
+.tbl {
+    border: 1px solid #888;
+    margin: 100px 5px 0 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bttn > button {
+    width: 80px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(9, 87, 80);
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bttn > button > i {
+    font-size: 10px;
+}
+
+.paybill {
+    width: 35%;
+    float: right;
+    text-align: right;
+    color: var(--box-text);
+}
+
+#btns {
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(69, 5, 5);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 30px;
+}
+
+
+
+
+/*  RESPONSIVE  */
+
+@media (min-width: 300px) and (max-width: 430px) {
+    .total {
+        padding: 1px;
+        height: 1880px;
+        margin: none;
+    }
+
+    .four {
+        width: 100%;
+    }
+
+    .four > div {
+        width: 100%;
+    }
+
+    .one {
+        width: 100%;
+    }
+
+    .o1 > div,
+    .o1 > div:first-child {
+        width: 90%;
+    }
+
+    .fullone {
+        border: none;
+    }
+
+    .sch {
+        width: auto;
+    }
+
+    .tbl {
+        width: 98%;
+        overflow: auto;
+    }
+
+    .bttn > button {
+        margin: 180px 0 0 10px;
+    }
+
+    .paybill {
+        width: 75%;
+    }
+
+    .f41 > div:first-child {
+        width: 90%;
+    }
+
+    th,
+    td {
+        padding: 2px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 290px) {
+    .total {
+        padding: 1px;
+        height: 1880px;
+        margin: none;
+    }
+
+    .four {
+        width: 100%;
+    }
+
+    .four > div {
+        width: 100%;
+    }
+
+    .one {
+        width: 100%;
+    }
+
+    .o1 > div,
+    .o1 > div:first-child {
+        width: 90%;
+    }
+
+    .fullone {
+        border: none;
+    }
+
+    .sch {
+        width: auto;
+    }
+
+    .tbl {
+        width: 98%;
+        overflow: auto;
+    }
+
+    .bttn > button {
+        margin: 110px 0 0 10px;
+    }
+
+    .paybill {
+        width: 75%;
+    }
+
+    .f41 > div:first-child {
+        width: 90%;
+    }
+
+    th,
+    td {
+        padding: 2px;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1380px) {
+    .four > div {
+        width: 46%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 920px) {
+    .total {
+        padding: 20px;
+        margin: 5px;
+        height: 1880px;
+    }
+
+    .four {
+        width: 100%;
+    }
+
+    .four > div {
+        width: 100%;
+    }
+
+    .one {
+        width: 100%;
+    }
+
+    .o1 > div,
+    .o1 > div:first-child {
+        width: 90%;
+    }
+
+    .fullone {
+        border: none;
+    }
+
+    .sch {
+        width: auto;
+    }
+
+    .tbl {
+        width: 98%;
+        overflow: auto;
+    }
+
+    .bttn > button {
+        margin: 180px 0 0 10px;
+    }
+
+    .paybill {
+        width: 75%;
+    }
+
+    .f41 > div:first-child {
+        width: 90%;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 690px) {
+    .total {
+        padding: 20px;
+        margin: 5px;
+        height: 1880px;
+    }
+
+    .four {
+        width: 100%;
+    }
+
+    .four > div {
+        width: 100%;
+    }
+
+    .one {
+        width: 100%;
+    }
+
+    .o1 > div,
+    .o1 > div:first-child {
+        width: 90%;
+    }
+
+    .fullone {
+        border: none;
+    }
+
+    .sch {
+        width: auto;
+    }
+
+    .tbl {
+        width: 98%;
+        overflow: auto;
+    }
+
+    .bttn > button {
+        margin: 180px 0 0 10px;
+    }
+
+    .paybill {
+        width: 75%;
+    }
+
+    .f41 > div:first-child {
+        width: 90%;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+}
